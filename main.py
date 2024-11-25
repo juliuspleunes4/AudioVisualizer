@@ -36,7 +36,8 @@ except Exception as e:
 # Tkinter GUI
 root = tk.Tk()
 root.title("Live Audio Visualizer")
-root.attributes('-fullscreen', True)  # Forceren van fullscreen
+root.state('zoomed')  # Vergroot het venster tot het volledige scherm
+
 
 # Sluitprogramma met Escape
 def close_fullscreen(event):
